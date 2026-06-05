@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Detail - ShopNow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">ShopNow</div>
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Electronics</a>
+      <a href="products.html">Fashion</a>
+      <a href="#">Cart 🛒</a>
+    </nav>
+  </header>
+
+  <!-- PRODUCT DETAIL -->
+  <div class="detail-page">
+
+    <!-- LEFT - Image -->
+    <div class="detail-img">
+      <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500&h=400&fit=crop" alt="iPhone 15 Pro">
+    </div>
+
+    <!-- RIGHT - Info -->
+    <div class="detail-info">
+      <h1>iPhone 15 Pro</h1>
+      <div class="stars">★★★★★ <span>(128 reviews)</span></div>
+      <p class="detail-price">$999</p>
+      <p class="old-price">Was: <s>$1199</s> — You save $200!</p>
+
+      <p class="detail-desc">
+        The iPhone 15 Pro features a titanium design, A17 Pro chip, 
+        48MP camera system, and USB-C connectivity. Experience the 
+        most powerful iPhone ever made.
+      </p>
+
+      <!-- Size Dropdown -->
+      <div class="option-group">
+        <label>Storage:</label>
+        <select id="sizeSelect">
+          <option>128 GB</option>
+          <option>256 GB</option>
+          <option>512 GB</option>
+          <option>1 TB</option>
+        </select>
+      </div>
+
+      <!-- Color -->
+      <div class="option-group">
+        <label>Color:</label>
+        <select>
+          <option>Black Titanium</option>
+          <option>White Titanium</option>
+          <option>Blue Titanium</option>
+          <option>Natural Titanium</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="detail-btns">
+        <button class="btn-cart" onclick="alert('Added to Cart! 🛒')">Add to Cart</button>
+        <button class="btn-buy">Buy Now</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <div class="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="review-card">
+      <p class="reviewer">Ahmed Ali ★★★★★</p>
+      <p>Amazing phone! Camera quality is outstanding. Best purchase ever!</p>
+    </div>
+
+    <div class="review-card">
+      <p class="reviewer">Sara Khan ★★★★☆</p>
+      <p>Great performance and battery life. Slightly expensive but worth it.</p>
+    </div>
+
+    <div class="review-card">
+      <p class="reviewer">Usman Malik ★★★★★</p>
+      <p>Titanium build feels premium. Very happy with this purchase!</p>
+    </div>
+
+  </div>
+
+  <!-- RELATED PRODUCTS -->
+  <div class="related">
+    <h2>Related Products</h2>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop" alt="Headphones">
+        <p class="product-name">Sony Headphones</p>
+        <p class="product-price">$279</p>
+        <button class="btn-buy">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&h=200&fit=crop" alt="Watch">
+        <p class="product-name">Apple Watch</p>
+        <p class="product-price">$399</p>
+        <button class="btn-buy">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&h=200&fit=crop" alt="MacBook">
+        <p class="product-name">MacBook Pro</p>
+        <p class="product-price">$1299</p>
+        <button class="btn-buy">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=300&h=200&fit=crop" alt="Camera">
+        <p class="product-name">Canon Camera</p>
+        <p class="product-price">$649</p>
+        <button class="btn-buy">Buy Now</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ShopNow. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Search bar functionality
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        alert('Searching for: ' + this.value);
+      }
+    });
+  </script>
+
+</body>
+</html>
